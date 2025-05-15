@@ -3,8 +3,9 @@ Using AWS and Docker to put a small wedding application online.
 
 This project essentially has 3 main steps.
 1. Creating the server, pem key, and modifying the security group for the instance.
-2. Syncing/moving the application files to the server/EC2.
-3. Installing Docker on EC2, creating the Docker image, and Docker container within the EC2.
+For this step use an Ubuntu t2.medium server in AWS. Make sure that you have ssh, http, and https open to all traffic in your security group. That isn't ideal for a security group in practice, but it will help us ensure that we can see the container that we create.
+3. Syncing/moving the application files to the server/EC2.
+4. Installing Docker on EC2, creating the Docker image, and Docker container within the EC2.
 
 Top sticking points/issues with the project:
 1. Making sure that your pem key has the correct permissions (chmod 400).
